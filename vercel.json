@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build && npm run build:web",
+  "outputDirectory": "mobile/dist",
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -17,7 +17,7 @@
     "prisma:migrate": "prisma migrate deploy --schema prisma/schema.prisma",
     "test": "npm --prefix mobile test",
     "build": "npm run prisma:generate",
-    "build:web": "npm --prefix mobile ci && npm --prefix mobile run build:web",
+    "build:web": "npm --prefix mobile install && npm --prefix mobile run build:web",
     "web": "npm --prefix mobile run web"
   },
   "dependencies": {
